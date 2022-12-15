@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/beauty_salon
+    username: konovalov_dbd
+    password: 1
+  jpa:
+    hibernate:
+      use-new-id-generator-mappings: false
