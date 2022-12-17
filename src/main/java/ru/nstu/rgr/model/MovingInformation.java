@@ -3,6 +3,7 @@ package ru.nstu.rgr.model;
 import javax.persistence.*;
 import java.sql.Date;
 import java.util.Collection;
+import java.util.List;
 
 @Entity
 @Table(name = "moving_information", schema = "public", catalog = "beauty_salon")
@@ -23,8 +24,6 @@ public class MovingInformation {
     @Basic
     @Column(name = "transfer_reason")
     private String transferReason;
-    @OneToMany(mappedBy = "movingInformationByMovingInformation")
-    private Collection<Staff> staffById;
 
     public int getId() {
         return id;
@@ -93,11 +92,4 @@ public class MovingInformation {
         return result;
     }
 
-    public Collection<Staff> getStaffById() {
-        return staffById;
-    }
-
-    public void setStaffById(Collection<Staff> staffById) {
-        this.staffById = staffById;
-    }
 }
