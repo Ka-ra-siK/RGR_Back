@@ -14,7 +14,7 @@ public class OrderService implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
-    private int id;
+    private Long id;
 
     @Column(name = "service_name")
     private String serviceName;

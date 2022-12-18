@@ -5,7 +5,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import ru.nstu.rgr.model.Clients;
 import ru.nstu.rgr.service.ClientsService;
-
 import java.util.List;
 
 @RestController

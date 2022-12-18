@@ -14,7 +14,7 @@ public class Masters {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
-    private int id;
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "staff_id", referencedColumnName = "id", nullable = false)

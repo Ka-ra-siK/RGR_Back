@@ -11,7 +11,7 @@ public class Materials {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
-    private int id;
+    private Long id;
 
     @Column(name = "cost")
     private Integer cost;

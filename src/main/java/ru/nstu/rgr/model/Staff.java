@@ -13,7 +13,7 @@ public class Staff {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
-    private int id;
+    private Long id;
 
     @Column(name = "address")
     private String address;
